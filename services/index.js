@@ -2,9 +2,8 @@
 // const http = require('http'),
 
 const database = require('./services/BudgetManagerAPI/config/database.js')
-const app = require('./services/BudgetManagerAPI/config/app.js')(database),
-// BudgetManagerServer = ('./app')(database),
-BudgetManagerPORT = process.env.PORT || 8080,
+const app = require('./services/BudgetManagerAPI/config/app.js')(database)
+BudgetManagerPORT = process.env.PORT || 8080;
 // LOCAL = '0.0.0.0';
 
 // BudgetManagerServer.listen(BudgetManagerPORT, LOCAL, () => console.log(`BudgetManagerAPI running on ${BudgetManagerPORT}`));
